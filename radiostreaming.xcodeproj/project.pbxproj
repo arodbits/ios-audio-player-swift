@@ -14,6 +14,7 @@
 		AE5C98811AEDB8A6008593F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5C98801AEDB8A6008593F5 /* Images.xcassets */; };
 		AE5C98841AEDB8A6008593F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5C98821AEDB8A6008593F5 /* LaunchScreen.xib */; };
 		AE5C98901AEDB8A6008593F5 /* radiostreamingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C988F1AEDB8A6008593F5 /* radiostreamingTests.swift */; };
+		AE5C989B1AEED8FC008593F5 /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C989A1AEED8FC008593F5 /* PlayerService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		AE5C98891AEDB8A6008593F5 /* radiostreamingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = radiostreamingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5C988E1AEDB8A6008593F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5C988F1AEDB8A6008593F5 /* radiostreamingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radiostreamingTests.swift; sourceTree = "<group>"; };
+		AE5C989A1AEED8FC008593F5 /* PlayerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		AE5C98731AEDB8A6008593F5 /* radiostreaming */ = {
 			isa = PBXGroup;
 			children = (
+				AE5C98991AEED8E3008593F5 /* services */,
 				AE5C98761AEDB8A6008593F5 /* AppDelegate.swift */,
 				AE5C987B1AEDB8A6008593F5 /* ViewController.swift */,
 				AE5C987D1AEDB8A6008593F5 /* Main.storyboard */,
@@ -113,6 +116,14 @@
 				AE5C988E1AEDB8A6008593F5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE5C98991AEED8E3008593F5 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				AE5C989A1AEED8FC008593F5 /* PlayerService.swift */,
+			);
+			name = services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5C989B1AEED8FC008593F5 /* PlayerService.swift in Sources */,
 				AE5C987C1AEDB8A6008593F5 /* ViewController.swift in Sources */,
 				AE5C987A1AEDB8A6008593F5 /* radiostreaming.xcdatamodeld in Sources */,
 				AE5C98771AEDB8A6008593F5 /* AppDelegate.swift in Sources */,
@@ -413,6 +425,7 @@
 				AE5C98951AEDB8A6008593F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE5C98961AEDB8A6008593F5 /* Build configuration list for PBXNativeTarget "radiostreamingTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +434,7 @@
 				AE5C98981AEDB8A6008593F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
