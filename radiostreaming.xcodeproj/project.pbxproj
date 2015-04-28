@@ -15,11 +15,15 @@
 		AE5C98841AEDB8A6008593F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5C98821AEDB8A6008593F5 /* LaunchScreen.xib */; };
 		AE5C98901AEDB8A6008593F5 /* radiostreamingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C988F1AEDB8A6008593F5 /* radiostreamingTests.swift */; };
 		AE5C989B1AEED8FC008593F5 /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C989A1AEED8FC008593F5 /* PlayerService.swift */; };
-		AE5DFEC91AEFC98D00A32EB1 /* radiostreaming_0000_THIS-IS-MY-SLOGAN.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFEC41AEFC98D00A32EB1 /* radiostreaming_0000_THIS-IS-MY-SLOGAN.png */; };
-		AE5DFECA1AEFC98D00A32EB1 /* radiostreaming_0001_RADIO-STATION.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFEC51AEFC98D00A32EB1 /* radiostreaming_0001_RADIO-STATION.png */; };
-		AE5DFECB1AEFC98D00A32EB1 /* radiostreaming_0002_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFEC61AEFC98D00A32EB1 /* radiostreaming_0002_stop.png */; };
-		AE5DFECC1AEFC98D00A32EB1 /* radiostreaming_0003_play.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFEC71AEFC98D00A32EB1 /* radiostreaming_0003_play.png */; };
-		AE5DFECD1AEFC98D00A32EB1 /* radiostreaming_0004_background.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFEC81AEFC98D00A32EB1 /* radiostreaming_0004_background.png */; };
+		AE5DFED71AEFD88B00A32EB1 /* radiostreaming_0000_background.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFECE1AEFD88B00A32EB1 /* radiostreaming_0000_background.png */; };
+		AE5DFED81AEFD88B00A32EB1 /* radiostreaming_0000s_0000_youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFECF1AEFD88B00A32EB1 /* radiostreaming_0000s_0000_youtube.png */; };
+		AE5DFED91AEFD88B00A32EB1 /* radiostreaming_0000s_0001_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED01AEFD88B00A32EB1 /* radiostreaming_0000s_0001_facebook.png */; };
+		AE5DFEDA1AEFD88B00A32EB1 /* radiostreaming_0000s_0002_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED11AEFD88B00A32EB1 /* radiostreaming_0000s_0002_twitter.png */; };
+		AE5DFEDB1AEFD88B00A32EB1 /* radiostreaming_0000s_0003_instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED21AEFD88B00A32EB1 /* radiostreaming_0000s_0003_instagram.png */; };
+		AE5DFEDC1AEFD88B00A32EB1 /* radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED31AEFD88B00A32EB1 /* radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png */; };
+		AE5DFEDD1AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED41AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png */; };
+		AE5DFEDE1AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED51AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png */; };
+		AE5DFEDF1AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED61AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,11 +49,15 @@
 		AE5C988E1AEDB8A6008593F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5C988F1AEDB8A6008593F5 /* radiostreamingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radiostreamingTests.swift; sourceTree = "<group>"; };
 		AE5C989A1AEED8FC008593F5 /* PlayerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
-		AE5DFEC41AEFC98D00A32EB1 /* radiostreaming_0000_THIS-IS-MY-SLOGAN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0000_THIS-IS-MY-SLOGAN.png"; sourceTree = "<group>"; };
-		AE5DFEC51AEFC98D00A32EB1 /* radiostreaming_0001_RADIO-STATION.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0001_RADIO-STATION.png"; sourceTree = "<group>"; };
-		AE5DFEC61AEFC98D00A32EB1 /* radiostreaming_0002_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0002_stop.png; sourceTree = "<group>"; };
-		AE5DFEC71AEFC98D00A32EB1 /* radiostreaming_0003_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0003_play.png; sourceTree = "<group>"; };
-		AE5DFEC81AEFC98D00A32EB1 /* radiostreaming_0004_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0004_background.png; sourceTree = "<group>"; };
+		AE5DFECE1AEFD88B00A32EB1 /* radiostreaming_0000_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0000_background.png; sourceTree = "<group>"; };
+		AE5DFECF1AEFD88B00A32EB1 /* radiostreaming_0000s_0000_youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0000s_0000_youtube.png; sourceTree = "<group>"; };
+		AE5DFED01AEFD88B00A32EB1 /* radiostreaming_0000s_0001_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0000s_0001_facebook.png; sourceTree = "<group>"; };
+		AE5DFED11AEFD88B00A32EB1 /* radiostreaming_0000s_0002_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0000s_0002_twitter.png; sourceTree = "<group>"; };
+		AE5DFED21AEFD88B00A32EB1 /* radiostreaming_0000s_0003_instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0000s_0003_instagram.png; sourceTree = "<group>"; };
+		AE5DFED31AEFD88B00A32EB1 /* radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png"; sourceTree = "<group>"; };
+		AE5DFED41AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0001s_0001_RADIO-PROEZAS.png"; sourceTree = "<group>"; };
+		AE5DFED51AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0002s_0000_stop.png; sourceTree = "<group>"; };
+		AE5DFED61AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0002s_0001_play.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +114,15 @@
 		AE5C98741AEDB8A6008593F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AE5DFEC41AEFC98D00A32EB1 /* radiostreaming_0000_THIS-IS-MY-SLOGAN.png */,
-				AE5DFEC51AEFC98D00A32EB1 /* radiostreaming_0001_RADIO-STATION.png */,
-				AE5DFEC61AEFC98D00A32EB1 /* radiostreaming_0002_stop.png */,
-				AE5DFEC71AEFC98D00A32EB1 /* radiostreaming_0003_play.png */,
-				AE5DFEC81AEFC98D00A32EB1 /* radiostreaming_0004_background.png */,
+				AE5DFECE1AEFD88B00A32EB1 /* radiostreaming_0000_background.png */,
+				AE5DFECF1AEFD88B00A32EB1 /* radiostreaming_0000s_0000_youtube.png */,
+				AE5DFED01AEFD88B00A32EB1 /* radiostreaming_0000s_0001_facebook.png */,
+				AE5DFED11AEFD88B00A32EB1 /* radiostreaming_0000s_0002_twitter.png */,
+				AE5DFED21AEFD88B00A32EB1 /* radiostreaming_0000s_0003_instagram.png */,
+				AE5DFED31AEFD88B00A32EB1 /* radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png */,
+				AE5DFED41AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png */,
+				AE5DFED51AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png */,
+				AE5DFED61AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png */,
 				AE5C98751AEDB8A6008593F5 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -222,14 +234,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5DFECD1AEFC98D00A32EB1 /* radiostreaming_0004_background.png in Resources */,
-				AE5DFECB1AEFC98D00A32EB1 /* radiostreaming_0002_stop.png in Resources */,
-				AE5DFEC91AEFC98D00A32EB1 /* radiostreaming_0000_THIS-IS-MY-SLOGAN.png in Resources */,
+				AE5DFED71AEFD88B00A32EB1 /* radiostreaming_0000_background.png in Resources */,
+				AE5DFED81AEFD88B00A32EB1 /* radiostreaming_0000s_0000_youtube.png in Resources */,
+				AE5DFEDE1AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png in Resources */,
+				AE5DFEDF1AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png in Resources */,
 				AE5C987F1AEDB8A6008593F5 /* Main.storyboard in Resources */,
+				AE5DFED91AEFD88B00A32EB1 /* radiostreaming_0000s_0001_facebook.png in Resources */,
+				AE5DFEDC1AEFD88B00A32EB1 /* radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png in Resources */,
+				AE5DFEDB1AEFD88B00A32EB1 /* radiostreaming_0000s_0003_instagram.png in Resources */,
 				AE5C98841AEDB8A6008593F5 /* LaunchScreen.xib in Resources */,
-				AE5DFECC1AEFC98D00A32EB1 /* radiostreaming_0003_play.png in Resources */,
+				AE5DFEDA1AEFD88B00A32EB1 /* radiostreaming_0000s_0002_twitter.png in Resources */,
 				AE5C98811AEDB8A6008593F5 /* Images.xcassets in Resources */,
-				AE5DFECA1AEFC98D00A32EB1 /* radiostreaming_0001_RADIO-STATION.png in Resources */,
+				AE5DFEDD1AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
