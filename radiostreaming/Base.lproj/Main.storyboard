@@ -74,6 +74,9 @@
                                 <state key="normal" image="radiostreaming_0000s_0002_twitter.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="twitterPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eXc-F2-UVq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9f-ne-aOP">
                                 <rect key="frame" x="445" y="515" width="129" height="54"/>
@@ -83,6 +86,9 @@
                                 <state key="normal" image="radiostreaming_0000s_0003_instagram.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="instagramPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kc3-TV-VH8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qca-a8-Rso">
                                 <rect key="frame" x="166" y="515" width="129" height="54"/>
@@ -92,6 +98,9 @@
                                 <state key="normal" image="radiostreaming_0000s_0001_facebook.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="facebookPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2db-cn-zKu"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radiostreaming_0001s_0001_RADIO-PROEZAS.png" translatesAutoresizingMaskIntoConstraints="NO" id="V1x-kM-akh">
                                 <rect key="frame" x="164" y="77" width="273" height="26"/>

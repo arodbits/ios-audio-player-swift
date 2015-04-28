@@ -48,8 +48,17 @@ class ViewController: UIViewController {
        self.player.volume(sender.value)
         
     }
+    @IBAction func twitterPressed(sender: UIButton) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://twitter.com/momentodedios")!)
+    }
+    @IBAction func instagramPressed(sender: UIButton) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://instagram.com/anthonymdd/")!)
+    }
+    @IBAction func facebookPressed(sender: UIButton) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://www.facebook.com/momentodedios")!)
+    }
     @IBAction func youtubePressed(sender: UIButton) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "http://reddit.com")!)
+        UIApplication.sharedApplication().openURL(NSURL(string: "https://www.youtube.com/user/MomentodeDios")!)
     }
 }
 
