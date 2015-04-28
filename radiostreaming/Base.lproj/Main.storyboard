@@ -80,13 +80,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png" translatesAutoresizingMaskIntoConstraints="NO" id="084-z8-jOM">
-                                <rect key="frame" x="180" y="111" width="240" height="15"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="15" id="foH-ef-lw5"/>
-                                    <constraint firstAttribute="width" constant="240" id="r4v-EL-0kw"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radiostreaming_0001s_0001_RADIO-PROEZAS.png" translatesAutoresizingMaskIntoConstraints="NO" id="V1x-kM-akh">
                                 <rect key="frame" x="164" y="77" width="273" height="26"/>
                                 <constraints>
@@ -94,6 +87,23 @@
                                     <constraint firstAttribute="height" constant="26" id="yGD-i1-9bE"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png" translatesAutoresizingMaskIntoConstraints="NO" id="084-z8-jOM">
+                                <rect key="frame" x="180" y="111" width="240" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="foH-ef-lw5"/>
+                                    <constraint firstAttribute="width" constant="240" id="r4v-EL-0kw"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.69999999999999996" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HSS-mR-cjl">
+                                <rect key="frame" x="107" y="456" width="387" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6q7-ZB-1oZ"/>
+                                    <constraint firstAttribute="width" constant="383" id="V1z-Jf-V5M"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="volumenSlider:" destination="vXZ-lx-hvc" eventType="valueChanged" id="ft4-yp-i1y"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -105,9 +115,11 @@
                             <constraint firstAttribute="centerX" secondItem="wvg-Zh-2iV" secondAttribute="centerX" constant="-0.5" id="792-1c-Tfx"/>
                             <constraint firstItem="guZ-cL-raV" firstAttribute="centerY" secondItem="mjO-zP-3VS" secondAttribute="centerY" id="8ed-I7-G4N"/>
                             <constraint firstItem="6eX-cY-GSh" firstAttribute="leading" secondItem="Qca-a8-Rso" secondAttribute="trailing" constant="10" id="CDQ-bK-9hn"/>
+                            <constraint firstAttribute="centerX" secondItem="HSS-mR-cjl" secondAttribute="centerX" id="F5X-GG-tcL"/>
                             <constraint firstAttribute="centerY" secondItem="084-z8-jOM" secondAttribute="centerY" constant="181.5" id="Iim-74-lhe"/>
                             <constraint firstAttribute="centerY" secondItem="mjO-zP-3VS" secondAttribute="centerY" id="SGw-8i-gfW"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="E9f-ne-aOP" secondAttribute="bottom" constant="31" id="TQh-gc-toW"/>
+                            <constraint firstAttribute="centerY" secondItem="HSS-mR-cjl" secondAttribute="centerY" constant="-171" id="aHj-ot-K3M"/>
                             <constraint firstItem="hZR-Qg-OTq" firstAttribute="width" secondItem="Qca-a8-Rso" secondAttribute="width" id="b9d-Fv-YXe"/>
                             <constraint firstAttribute="centerX" secondItem="V1x-kM-akh" secondAttribute="centerX" constant="-0.5" id="dTC-Cy-hmC"/>
                             <constraint firstItem="084-z8-jOM" firstAttribute="top" secondItem="V1x-kM-akh" secondAttribute="bottom" constant="8" id="ezR-vL-o9X"/>

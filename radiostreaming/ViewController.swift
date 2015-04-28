@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.stopButton.hidden = true
@@ -40,6 +41,12 @@ class ViewController: UIViewController {
 
     @IBAction func stopPressed(sender: UIButton) {
         self.player.stop()
-        self.toggleButton(sender, next: self.playButton)    }
+        self.toggleButton(sender, next: self.playButton)
+    }
+    
+    @IBAction func volumenSlider(sender: UISlider) {
+       self.player.volume(sender.value)
+        
+    }
 }
 

@@ -31,4 +31,8 @@ class PlayerService{
         self.audioPlayer.pause()
     }
     
+    func volume(value: Float){
+        self.audioPlayer.volume = value
+    }
+    
 }
