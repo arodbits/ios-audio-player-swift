@@ -33,6 +33,7 @@ class PlayerService{
     
     func volume(value: Float){
         self.audioPlayer.volume = value
+        println(value)
     }
     
 }

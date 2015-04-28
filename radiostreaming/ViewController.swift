@@ -48,5 +48,8 @@ class ViewController: UIViewController {
        self.player.volume(sender.value)
         
     }
+    @IBAction func youtubePressed(sender: UIButton) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://reddit.com")!)
+    }
 }
 
