@@ -15,6 +15,11 @@
 		AE5C98841AEDB8A6008593F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5C98821AEDB8A6008593F5 /* LaunchScreen.xib */; };
 		AE5C98901AEDB8A6008593F5 /* radiostreamingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C988F1AEDB8A6008593F5 /* radiostreamingTests.swift */; };
 		AE5C989B1AEED8FC008593F5 /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C989A1AEED8FC008593F5 /* PlayerService.swift */; };
+		AE5DFEC91AEFC98D00A32EB1 /* radiostreaming_0000_THIS-IS-MY-SLOGAN.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFEC41AEFC98D00A32EB1 /* radiostreaming_0000_THIS-IS-MY-SLOGAN.png */; };
+		AE5DFECA1AEFC98D00A32EB1 /* radiostreaming_0001_RADIO-STATION.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFEC51AEFC98D00A32EB1 /* radiostreaming_0001_RADIO-STATION.png */; };
+		AE5DFECB1AEFC98D00A32EB1 /* radiostreaming_0002_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFEC61AEFC98D00A32EB1 /* radiostreaming_0002_stop.png */; };
+		AE5DFECC1AEFC98D00A32EB1 /* radiostreaming_0003_play.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFEC71AEFC98D00A32EB1 /* radiostreaming_0003_play.png */; };
+		AE5DFECD1AEFC98D00A32EB1 /* radiostreaming_0004_background.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFEC81AEFC98D00A32EB1 /* radiostreaming_0004_background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		AE5C988E1AEDB8A6008593F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5C988F1AEDB8A6008593F5 /* radiostreamingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radiostreamingTests.swift; sourceTree = "<group>"; };
 		AE5C989A1AEED8FC008593F5 /* PlayerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
+		AE5DFEC41AEFC98D00A32EB1 /* radiostreaming_0000_THIS-IS-MY-SLOGAN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0000_THIS-IS-MY-SLOGAN.png"; sourceTree = "<group>"; };
+		AE5DFEC51AEFC98D00A32EB1 /* radiostreaming_0001_RADIO-STATION.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0001_RADIO-STATION.png"; sourceTree = "<group>"; };
+		AE5DFEC61AEFC98D00A32EB1 /* radiostreaming_0002_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0002_stop.png; sourceTree = "<group>"; };
+		AE5DFEC71AEFC98D00A32EB1 /* radiostreaming_0003_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0003_play.png; sourceTree = "<group>"; };
+		AE5DFEC81AEFC98D00A32EB1 /* radiostreaming_0004_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0004_background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,7 @@
 				AE5C98731AEDB8A6008593F5 /* radiostreaming */,
 				AE5C988C1AEDB8A6008593F5 /* radiostreamingTests */,
 				AE5C98721AEDB8A6008593F5 /* Products */,
+				AE5C98741AEDB8A6008593F5 /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,7 +99,6 @@
 				AE5C98801AEDB8A6008593F5 /* Images.xcassets */,
 				AE5C98821AEDB8A6008593F5 /* LaunchScreen.xib */,
 				AE5C98781AEDB8A6008593F5 /* radiostreaming.xcdatamodeld */,
-				AE5C98741AEDB8A6008593F5 /* Supporting Files */,
 			);
 			path = radiostreaming;
 			sourceTree = "<group>";
@@ -96,9 +106,15 @@
 		AE5C98741AEDB8A6008593F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AE5DFEC41AEFC98D00A32EB1 /* radiostreaming_0000_THIS-IS-MY-SLOGAN.png */,
+				AE5DFEC51AEFC98D00A32EB1 /* radiostreaming_0001_RADIO-STATION.png */,
+				AE5DFEC61AEFC98D00A32EB1 /* radiostreaming_0002_stop.png */,
+				AE5DFEC71AEFC98D00A32EB1 /* radiostreaming_0003_play.png */,
+				AE5DFEC81AEFC98D00A32EB1 /* radiostreaming_0004_background.png */,
 				AE5C98751AEDB8A6008593F5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			path = radiostreaming;
 			sourceTree = "<group>";
 		};
 		AE5C988C1AEDB8A6008593F5 /* radiostreamingTests */ = {
@@ -206,9 +222,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5DFECD1AEFC98D00A32EB1 /* radiostreaming_0004_background.png in Resources */,
+				AE5DFECB1AEFC98D00A32EB1 /* radiostreaming_0002_stop.png in Resources */,
+				AE5DFEC91AEFC98D00A32EB1 /* radiostreaming_0000_THIS-IS-MY-SLOGAN.png in Resources */,
 				AE5C987F1AEDB8A6008593F5 /* Main.storyboard in Resources */,
 				AE5C98841AEDB8A6008593F5 /* LaunchScreen.xib in Resources */,
+				AE5DFECC1AEFC98D00A32EB1 /* radiostreaming_0003_play.png in Resources */,
 				AE5C98811AEDB8A6008593F5 /* Images.xcassets in Resources */,
+				AE5DFECA1AEFC98D00A32EB1 /* radiostreaming_0001_RADIO-STATION.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

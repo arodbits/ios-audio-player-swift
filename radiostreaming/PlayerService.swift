@@ -16,7 +16,7 @@ class PlayerService{
     var audioPlayer:AVPlayer
     
     init(){
-        self.streamingURL = NSURL(string: "")!
+        self.streamingURL = NSURL(string: "http://s8.voscast.com:9476")!
         let audioStreamingItem = AVPlayerItem(URL: self.streamingURL)
         self.audioPlayer = AVPlayer(playerItem: audioStreamingItem)
     }
@@ -24,7 +24,11 @@ class PlayerService{
     
     func play(){
         self.audioPlayer.rate = 1.0
-        self.play()
+        self.audioPlayer.play()
+    }
+    
+    func stop(){
+        self.audioPlayer.pause()
     }
     
 }

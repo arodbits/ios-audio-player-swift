@@ -10,8 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let player = PlayerService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,6 +25,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func playPressed(sender: UIButton) {
+        self.player.play()
+    }
 
+    @IBAction func stopPressed(sender: UIButton) {
+        self.player.stop()
+    }
 }
 
