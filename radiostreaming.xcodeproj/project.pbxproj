@@ -24,6 +24,9 @@
 		AE5DFEDD1AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED41AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png */; };
 		AE5DFEDE1AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED51AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png */; };
 		AE5DFEDF1AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED61AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png */; };
+		AE9591D91AFD1E30003CD36E /* OAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9591D81AFD1E30003CD36E /* OAuthService.swift */; };
+		AE9591DB1AFD25C3003CD36E /* EventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9591DA1AFD25C3003CD36E /* EventsController.swift */; };
+		AE9591DD1AFD3A2D003CD36E /* EventsCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9591DC1AFD3A2D003CD36E /* EventsCells.swift */; };
 		AEAA285D1AF02F4900332C75 /* radiostreaming_0000_promo1.png in Resources */ = {isa = PBXBuildFile; fileRef = AEAA285C1AF02F4900332C75 /* radiostreaming_0000_promo1.png */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +62,9 @@
 		AE5DFED41AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0001s_0001_RADIO-PROEZAS.png"; sourceTree = "<group>"; };
 		AE5DFED51AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0002s_0000_stop.png; sourceTree = "<group>"; };
 		AE5DFED61AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0002s_0001_play.png; sourceTree = "<group>"; };
+		AE9591D81AFD1E30003CD36E /* OAuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthService.swift; sourceTree = "<group>"; };
+		AE9591DA1AFD25C3003CD36E /* EventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsController.swift; sourceTree = "<group>"; };
+		AE9591DC1AFD3A2D003CD36E /* EventsCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsCells.swift; sourceTree = "<group>"; };
 		AEAA285C1AF02F4900332C75 /* radiostreaming_0000_promo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0000_promo1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,10 +111,12 @@
 				AE5C98991AEED8E3008593F5 /* services */,
 				AE5C98761AEDB8A6008593F5 /* AppDelegate.swift */,
 				AE5C987B1AEDB8A6008593F5 /* ViewController.swift */,
+				AE9591DA1AFD25C3003CD36E /* EventsController.swift */,
 				AE5C987D1AEDB8A6008593F5 /* Main.storyboard */,
 				AE5C98801AEDB8A6008593F5 /* Images.xcassets */,
 				AE5C98821AEDB8A6008593F5 /* LaunchScreen.xib */,
 				AE5C98781AEDB8A6008593F5 /* radiostreaming.xcdatamodeld */,
+				AE9591DC1AFD3A2D003CD36E /* EventsCells.swift */,
 			);
 			path = radiostreaming;
 			sourceTree = "<group>";
@@ -153,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				AE5C989A1AEED8FC008593F5 /* PlayerService.swift */,
+				AE9591D81AFD1E30003CD36E /* OAuthService.swift */,
 			);
 			name = services;
 			sourceTree = "<group>";
@@ -267,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9591DB1AFD25C3003CD36E /* EventsController.swift in Sources */,
 				AE5C989B1AEED8FC008593F5 /* PlayerService.swift in Sources */,
 				AE5C987C1AEDB8A6008593F5 /* ViewController.swift in Sources */,
+				AE9591DD1AFD3A2D003CD36E /* EventsCells.swift in Sources */,
+				AE9591D91AFD1E30003CD36E /* OAuthService.swift in Sources */,
 				AE5C987A1AEDB8A6008593F5 /* radiostreaming.xcdatamodeld in Sources */,
 				AE5C98771AEDB8A6008593F5 /* AppDelegate.swift in Sources */,
 			);

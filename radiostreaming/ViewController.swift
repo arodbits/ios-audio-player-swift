@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
+    @IBAction func eventsPressed(sender: UIButton) {
+        performSegueWithIdentifier("playerTOEvents", sender: AnyObject?())
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
