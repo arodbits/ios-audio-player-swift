@@ -29,7 +29,7 @@ class EventsController: UIViewController, UITableViewDataSource, UITableViewDele
         var cell = self.myTableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! EventsCells;
         var event = self.events[indexPath.row]
         cell.backgroundColor = UIColor.purpleColor();
-        print("sss");
+        cell.dayWeek.text = event
         return cell
     }
 

@@ -23,6 +23,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.stopButton.hidden = true
         
+        let oauth = OAuthService()
+        oauth.getAccessToken { (result) -> Void in
+
+        }
         
         // Do any additional setup after loading the view, typically from a nib.
     }
