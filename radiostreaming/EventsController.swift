@@ -12,11 +12,17 @@ import UIKit
 class EventsController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     let events = ["event 1", "event 2", "Event 3"]
-    
+
     @IBOutlet var myTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let oauth = OAuthService()
+        oauth.getAccessToken { (result) -> Void in
+            let jsonResult = NSJSONSerialization.JSONObjectWithData(result as! NSData, options: nil, error: nil) as! NSDictionary
+            let token = jsonResult["access_token"]
+            
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

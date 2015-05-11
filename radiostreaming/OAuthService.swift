@@ -15,6 +15,7 @@ class OAuthService{
     let apiURL = NSURL(string: "http://radioproezas.app")
     let session = NSURLSession.sharedSession()
     let grant_type: NSString
+    let defaults = NSUserDefaults.standardUserDefaults()
    
     init(){
         //Insecure for production. Hide id and secret.
@@ -31,10 +32,10 @@ class OAuthService{
                                  "client_id"        : self.client_id,
                                  "client_secret"    : self.client_secret]
         self.postRequest(request, data: body, callback: callback)
-
     }
     // Asynch postRequest
-    func postRequest(request: NSMutableURLRequest, data: NSDictionary, callback: (result: AnyObject)->Void){
+    func postRequest(request: NSMutableURLRequest, data: NSDictionary, callback: (result: AnyObject)->Void)
+    {
         request.HTTPMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         var error: NSError?
@@ -43,7 +44,22 @@ class OAuthService{
             callback(result: data)
         })
         task.resume()
-
     }
+    func getRequest(resource: String, callback: (result: AnyObject)->Void)
+    {
+        let url = NSURL(string: resource, relativeToURL: self.apiURL)
+        let request = NSMutableURLRequest(URL: url!)
+        request.HTTPMethod = "GET"
+    
+        let token = self.defaults.stringForKey("access_token")
 
+        request.setValue("Bearer \(token!)", forHTTPHeaderField: "Authorization")
+
+        var error: NSError
+        let task = self.session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
+            let res = NSJSONSerialization.JSONObjectWithData(data, options: nil , error: nil) as! NSDictionary
+            callback(result: res)
+        })
+        task.resume()
+    }
 }
