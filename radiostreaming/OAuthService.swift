@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 class OAuthService{
+    
     let client_id: NSString
     let client_secret: NSString
     let apiURL = NSURL(string: "http://radioproezas.app")
@@ -24,42 +25,48 @@ class OAuthService{
         self.grant_type = "client_credentials"
     }
     
-    func getAccessToken(callback: (result: AnyObject)->Void ){
-
+    func run(){
+        
         let url = NSURL(string: "api/access_token", relativeToURL: self.apiURL)
-        let request = NSMutableURLRequest(URL: url!)
+        
         let body:NSDictionary = ["grant_type"       : self.grant_type,
-                                 "client_id"        : self.client_id,
-                                 "client_secret"    : self.client_secret]
-        self.postRequest(request, data: body, callback: callback)
-    }
-    // Asynch postRequest
-    func postRequest(request: NSMutableURLRequest, data: NSDictionary, callback: (result: AnyObject)->Void)
-    {
-        request.HTTPMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        var error: NSError?
-        request.HTTPBody = NSJSONSerialization.dataWithJSONObject(data, options: nil, error: &error)
-        let task = self.session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
-            callback(result: data)
-        })
-        task.resume()
-    }
-    func getRequest(resource: String, callback: (result: AnyObject)->Void)
-    {
-        let url = NSURL(string: resource, relativeToURL: self.apiURL)
+            "client_id"        : self.client_id,
+            "client_secret"    : self.client_secret]
+        
         let request = NSMutableURLRequest(URL: url!)
-        request.HTTPMethod = "GET"
-    
-        let token = self.defaults.stringForKey("access_token")
-
-        request.setValue("Bearer \(token!)", forHTTPHeaderField: "Authorization")
-
-        var error: NSError
-        let task = self.session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
-            let res = NSJSONSerialization.JSONObjectWithData(data, options: nil , error: nil) as! NSDictionary
-            callback(result: res)
-        })
-        task.resume()
+        
+        request.HTTPMethod = "POST"
+        
+        request.timeoutInterval = 10
+        
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        var error: NSError?
+        
+        request.HTTPBody = NSJSONSerialization.dataWithJSONObject(body, options: nil, error: &error)
+        
+        if(error != nil){
+        
+            let task = self.session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
+            
+                let responseCode = response as! NSHTTPURLResponse
+                
+                if (responseCode == 200){
+                
+                    var jsonError: NSErrorPointer = NSErrorPointer()
+                    
+                    if let jsonDecoded = NSJSONSerialization.JSONObjectWithData(data , options: nil, error: jsonError) as? NSDictionary{
+                        
+                        self.defaults.setValue(jsonDecoded["access_token"], forKey: "access_token")
+                    
+                    }
+                }else if (responseCode == 401) {
+                    
+                }
+            })
+            
+            task.resume()
+        
+        }
     }
 }

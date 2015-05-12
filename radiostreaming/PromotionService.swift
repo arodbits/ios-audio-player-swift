@@ -9,19 +9,28 @@
 import Foundation
 import UIKit
 
-class PromotionService{
- 
-    let service = OAuthService()
+class PromotionOAuthService{
     
-    func all(callback: (promotions: NSDictionary)->Void){
-        service.getRequest("api/promotions") { (result) -> Void in
-            var error: NSError?
-            callback(promotions: result as! NSDictionary)
-        }
+    func all(callback: (result: NSDictionary)->Void){
+       
     }
     
-    func find(id: Int){
+    func find(id: Int, callback: (result: NSDictionary)->Void){
       
+    }
+    
+}
+
+class PromotionService {
+    
+    let service: NSString
+    
+    init(){
+        self.service = "this service"
+    }
+    
+    func all(){
+        //service.all()
     }
     
 }

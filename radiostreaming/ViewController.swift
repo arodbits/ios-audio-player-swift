@@ -24,15 +24,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.stopButton.hidden = true
         
-        let oauth = OAuthService()
-        oauth.getAccessToken { (result) -> Void in
-            let jsonData = NSJSONSerialization.JSONObjectWithData(result as! NSData, options: nil, error: nil) as! NSDictionary
-            self.defaults.setValue(jsonData["access_token"], forKey: "access_token")
-            let promotion = PromotionService()
-            promotion.all({ (promotions) -> Void in
-                print(promotions)
-            })
-        }
+        let Promotions = PromotionService();
+        let promotions = Promotions.all();
         
         
         // Do any additional setup after loading the view, typically from a nib.

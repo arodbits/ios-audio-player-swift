@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE4E685D1B00F17000F455B4 /* PromotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4E685C1B00F17000F455B4 /* PromotionService.swift */; };
+		AE4E68611B0240E800F455B4 /* OAuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4E68601B0240E800F455B4 /* OAuthApi.swift */; };
 		AE5C98771AEDB8A6008593F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C98761AEDB8A6008593F5 /* AppDelegate.swift */; };
 		AE5C987A1AEDB8A6008593F5 /* radiostreaming.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE5C98781AEDB8A6008593F5 /* radiostreaming.xcdatamodeld */; };
 		AE5C987C1AEDB8A6008593F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C987B1AEDB8A6008593F5 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		AE4E685C1B00F17000F455B4 /* PromotionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionService.swift; sourceTree = "<group>"; };
+		AE4E68601B0240E800F455B4 /* OAuthApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthApi.swift; sourceTree = "<group>"; };
 		AE5C98711AEDB8A6008593F5 /* radiostreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = radiostreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5C98751AEDB8A6008593F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5C98761AEDB8A6008593F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE5528D21B024800001D9D0C /* contracts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = contracts;
+			sourceTree = "<group>";
+		};
 		AE5C98681AEDB8A6008593F5 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +121,7 @@
 		AE5C98731AEDB8A6008593F5 /* radiostreaming */ = {
 			isa = PBXGroup;
 			children = (
+				AE5528D21B024800001D9D0C /* contracts */,
 				AE5C98991AEED8E3008593F5 /* services */,
 				AE5C98761AEDB8A6008593F5 /* AppDelegate.swift */,
 				AE5C987B1AEDB8A6008593F5 /* ViewController.swift */,
@@ -168,6 +178,7 @@
 				AE9591D81AFD1E30003CD36E /* OAuthService.swift */,
 				AE82B55B1B00233400BDFB76 /* DataProvider.swift */,
 				AE4E685C1B00F17000F455B4 /* PromotionService.swift */,
+				AE4E68601B0240E800F455B4 /* OAuthApi.swift */,
 			);
 			name = services;
 			sourceTree = "<group>";
@@ -290,6 +301,7 @@
 				AE9591D91AFD1E30003CD36E /* OAuthService.swift in Sources */,
 				AE4E685D1B00F17000F455B4 /* PromotionService.swift in Sources */,
 				AE5C987A1AEDB8A6008593F5 /* radiostreaming.xcdatamodeld in Sources */,
+				AE4E68611B0240E800F455B4 /* OAuthApi.swift in Sources */,
 				AE5C98771AEDB8A6008593F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
