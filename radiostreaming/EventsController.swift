@@ -14,17 +14,28 @@ class EventsController: UIViewController, UITableViewDataSource, UITableViewDele
     var promotions: NSArray = NSArray()
 
     @IBOutlet var myTableView: UITableView!
+    @IBOutlet weak var eventsCount: UILabel!
     
+    @IBOutlet weak var viewActivity: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.viewActivity.hidesWhenStopped = true
+        self.viewActivity.startAnimating()
+        
         self.myTableView.backgroundView = UIImageView(image: UIImage(named: "radiostreaming_0009_color-blurry-background.png"))
         let promotionService = PromotionService()
         promotionService.all { (result, error) -> Void in
             let result = NSJSONSerialization.JSONObjectWithData(result!, options: nil, error: nil) as! NSDictionary
             self.promotions = result["promotions"] as! NSArray
-            self.refresh()
+            if (self.promotions.count > 0) {
+                self.refresh()
+            }
         }
+    }
+    
+    @IBAction func backPressed(sender: UIButton) {
+        self.performSegueWithIdentifier("backToPlayer", sender: self)
     }
     
     override func prefersStatusBarHidden() -> Bool {
@@ -34,6 +45,8 @@ class EventsController: UIViewController, UITableViewDataSource, UITableViewDele
     func refresh(){
         NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
            self.myTableView.reloadData()
+           self.eventsCount.text = String(stringInterpolationSegment: self.promotions.count)
+           self.viewActivity.stopAnimating()
         })
     }
     

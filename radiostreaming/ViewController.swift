@@ -13,11 +13,18 @@ class ViewController: UIViewController {
     let player = PlayerService()
     let defaults = NSUserDefaults.standardUserDefaults()
     
+   
+    @IBOutlet weak var title: UILabel!
+
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
     @IBAction func eventsPressed(sender: UIButton) {
         performSegueWithIdentifier("playerTOEvents", sender: AnyObject?())
+    }
+    
+    @IBAction func backFromEventsController(segue:UIStoryboardSegue){
+        
     }
     
     override func viewDidLoad() {
@@ -27,7 +34,11 @@ class ViewController: UIViewController {
         let oauth = OAuthService()
         oauth.run()
         
-        
+        let radioService = RadioService()
+        radioService.find(4, callback: { (result, error) -> Void in
+          let radio = NSJSONSerialization.JSONObjectWithData(result!, options: nil, error: nil) as! NSDictionary
+            self.title.text = String(stringInterpolationSegment: radio["title"]!)
+        })
         
         // Do any additional setup after loading the view, typically from a nib.
     }
