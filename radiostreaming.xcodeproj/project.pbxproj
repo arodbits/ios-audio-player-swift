@@ -11,6 +11,13 @@
 		AE4E68611B0240E800F455B4 /* OAuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4E68601B0240E800F455B4 /* OAuthApi.swift */; };
 		AE5528D41B06E206001D9D0C /* radiostreaming_0009_color-blurry-background.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528D31B06E206001D9D0C /* radiostreaming_0009_color-blurry-background.png */; };
 		AE5528D61B06E8F9001D9D0C /* radiostreaming_0007_Ellipse-1-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528D51B06E8F9001D9D0C /* radiostreaming_0007_Ellipse-1-copy.png */; };
+		AE5528D81B07809F001D9D0C /* radiostreaming_0010_Rectangle-1.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528D71B07809F001D9D0C /* radiostreaming_0010_Rectangle-1.png */; };
+		AE5528DA1B07814E001D9D0C /* radiostreaming_0013_bg-darken.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528D91B07814E001D9D0C /* radiostreaming_0013_bg-darken.png */; };
+		AE5528DC1B07824D001D9D0C /* radiostreaming_0002_EVENTS.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528DB1B07824D001D9D0C /* radiostreaming_0002_EVENTS.png */; };
+		AE5528DE1B078270001D9D0C /* radiostreaming_0003_today-32.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528DD1B078270001D9D0C /* radiostreaming_0003_today-32.png */; };
+		AE5528E01B078679001D9D0C /* radiostreaming_0008_Ellipse-1.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528DF1B078679001D9D0C /* radiostreaming_0008_Ellipse-1.png */; };
+		AE5528E21B078DB8001D9D0C /* radiostreaming_0021_Rounded-Rectangle-1.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528E11B078DB8001D9D0C /* radiostreaming_0021_Rounded-Rectangle-1.png */; };
+		AE5528E41B0791C7001D9D0C /* radiostreaming_0018_Shape-1.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528E31B0791C7001D9D0C /* radiostreaming_0018_Shape-1.png */; };
 		AE5C98771AEDB8A6008593F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C98761AEDB8A6008593F5 /* AppDelegate.swift */; };
 		AE5C987A1AEDB8A6008593F5 /* radiostreaming.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE5C98781AEDB8A6008593F5 /* radiostreaming.xcdatamodeld */; };
 		AE5C987C1AEDB8A6008593F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C987B1AEDB8A6008593F5 /* ViewController.swift */; };
@@ -50,6 +57,13 @@
 		AE4E68601B0240E800F455B4 /* OAuthApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthApi.swift; sourceTree = "<group>"; };
 		AE5528D31B06E206001D9D0C /* radiostreaming_0009_color-blurry-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0009_color-blurry-background.png"; sourceTree = "<group>"; };
 		AE5528D51B06E8F9001D9D0C /* radiostreaming_0007_Ellipse-1-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0007_Ellipse-1-copy.png"; sourceTree = "<group>"; };
+		AE5528D71B07809F001D9D0C /* radiostreaming_0010_Rectangle-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0010_Rectangle-1.png"; sourceTree = "<group>"; };
+		AE5528D91B07814E001D9D0C /* radiostreaming_0013_bg-darken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0013_bg-darken.png"; sourceTree = "<group>"; };
+		AE5528DB1B07824D001D9D0C /* radiostreaming_0002_EVENTS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0002_EVENTS.png; sourceTree = "<group>"; };
+		AE5528DD1B078270001D9D0C /* radiostreaming_0003_today-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0003_today-32.png"; sourceTree = "<group>"; };
+		AE5528DF1B078679001D9D0C /* radiostreaming_0008_Ellipse-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0008_Ellipse-1.png"; sourceTree = "<group>"; };
+		AE5528E11B078DB8001D9D0C /* radiostreaming_0021_Rounded-Rectangle-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0021_Rounded-Rectangle-1.png"; sourceTree = "<group>"; };
+		AE5528E31B0791C7001D9D0C /* radiostreaming_0018_Shape-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0018_Shape-1.png"; sourceTree = "<group>"; };
 		AE5C98711AEDB8A6008593F5 /* radiostreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = radiostreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5C98751AEDB8A6008593F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5C98761AEDB8A6008593F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,11 +163,18 @@
 				AEAA285C1AF02F4900332C75 /* radiostreaming_0000_promo1.png */,
 				AE5DFED01AEFD88B00A32EB1 /* radiostreaming_0000s_0001_facebook.png */,
 				AE5DFED11AEFD88B00A32EB1 /* radiostreaming_0000s_0002_twitter.png */,
+				AE5528E11B078DB8001D9D0C /* radiostreaming_0021_Rounded-Rectangle-1.png */,
 				AE5DFED21AEFD88B00A32EB1 /* radiostreaming_0000s_0003_instagram.png */,
+				AE5528E31B0791C7001D9D0C /* radiostreaming_0018_Shape-1.png */,
 				AE5DFED31AEFD88B00A32EB1 /* radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png */,
 				AE5DFED41AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png */,
 				AE5DFED51AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png */,
 				AE5DFED61AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png */,
+				AE5528D71B07809F001D9D0C /* radiostreaming_0010_Rectangle-1.png */,
+				AE5528D91B07814E001D9D0C /* radiostreaming_0013_bg-darken.png */,
+				AE5528DF1B078679001D9D0C /* radiostreaming_0008_Ellipse-1.png */,
+				AE5528DB1B07824D001D9D0C /* radiostreaming_0002_EVENTS.png */,
+				AE5528DD1B078270001D9D0C /* radiostreaming_0003_today-32.png */,
 				AE5C98751AEDB8A6008593F5 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -270,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEAA285D1AF02F4900332C75 /* radiostreaming_0000_promo1.png in Resources */,
+				AE5528DC1B07824D001D9D0C /* radiostreaming_0002_EVENTS.png in Resources */,
 				AE5528D41B06E206001D9D0C /* radiostreaming_0009_color-blurry-background.png in Resources */,
 				AE5DFED71AEFD88B00A32EB1 /* radiostreaming_0000_background.png in Resources */,
 				AE5DFED81AEFD88B00A32EB1 /* radiostreaming_0000s_0000_youtube.png in Resources */,
@@ -278,8 +300,14 @@
 				AE5DFEDF1AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png in Resources */,
 				AE5C987F1AEDB8A6008593F5 /* Main.storyboard in Resources */,
 				AE5DFED91AEFD88B00A32EB1 /* radiostreaming_0000s_0001_facebook.png in Resources */,
+				AE5528D81B07809F001D9D0C /* radiostreaming_0010_Rectangle-1.png in Resources */,
 				AE5DFEDC1AEFD88B00A32EB1 /* radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png in Resources */,
+				AE5528DA1B07814E001D9D0C /* radiostreaming_0013_bg-darken.png in Resources */,
+				AE5528E01B078679001D9D0C /* radiostreaming_0008_Ellipse-1.png in Resources */,
+				AE5528DE1B078270001D9D0C /* radiostreaming_0003_today-32.png in Resources */,
 				AE5DFEDB1AEFD88B00A32EB1 /* radiostreaming_0000s_0003_instagram.png in Resources */,
+				AE5528E21B078DB8001D9D0C /* radiostreaming_0021_Rounded-Rectangle-1.png in Resources */,
+				AE5528E41B0791C7001D9D0C /* radiostreaming_0018_Shape-1.png in Resources */,
 				AE5C98841AEDB8A6008593F5 /* LaunchScreen.xib in Resources */,
 				AE5DFEDA1AEFD88B00A32EB1 /* radiostreaming_0000s_0002_twitter.png in Resources */,
 				AE5C98811AEDB8A6008593F5 /* Images.xcassets in Resources */,
