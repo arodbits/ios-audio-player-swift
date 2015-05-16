@@ -21,7 +21,6 @@ class PlayerService{
         self.audioPlayer = AVPlayer(playerItem: audioStreamingItem)
     }
     
-    
     func play(){
         self.audioPlayer.rate = 1.0
         self.audioPlayer.play()

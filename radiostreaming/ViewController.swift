@@ -24,8 +24,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.stopButton.hidden = true
         
-        let Promotions = PromotionService();
-        let promotions = Promotions.all();
+        let oauth = OAuthService()
+        oauth.run()
+        
         
         
         // Do any additional setup after loading the view, typically from a nib.

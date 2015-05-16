@@ -9,28 +9,53 @@
 import Foundation
 import UIKit
 
-class PromotionOAuthService{
-    
-    func all(callback: (result: NSDictionary)->Void){
-       
-    }
-    
-    func find(id: Int, callback: (result: NSDictionary)->Void){
-      
-    }
-    
-}
 
 class PromotionService {
     
-    let service: NSString
+    let service: OAuthService
     
     init(){
-        self.service = "this service"
+        self.service = OAuthService()
     }
     
-    func all(){
-        //service.all()
+    func all(callback: (result: NSData?, error: NSDictionary?)->Void){
+        print("working")
+        service.get("api/promotions", callback: callback)
+    }
+    
+    func save(){
+        //service.save(promotion)
+    }
+    
+    func update(){
+    
+    }
+    
+    func delete(){
+    
+    }
+    
+    func find(){
+        //service.find('promotion', 'id')
     }
     
 }
+/*
+promotion.all()
+*/
+
+
+/*
+MySQL service
+--------------
+
+response = mysql.find('table', 'conditions')
+mysql.save()
+
+
+promotions = oauth.all('promotions')
+oauth.save('prmotions/create', 'values') 
+
+
+
+*/

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>DD183C41-8FEE-4096-A3CA-FCDD0E132ABD</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>radiostreaming</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E8E1B2C24BC47010F1E6E2B88C4CEC2709F28CEC</key>
 		<string>github.com:anthony2727/radiostreaming.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>radiostreaming.xcodeproj/project.xcworkspace</string>
+	<string>radiostreaming.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E8E1B2C24BC47010F1E6E2B88C4CEC2709F28CEC</key>

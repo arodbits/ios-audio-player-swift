@@ -44,23 +44,24 @@ class OAuthService{
         var error: NSError?
         
         request.HTTPBody = NSJSONSerialization.dataWithJSONObject(body, options: nil, error: &error)
+
         
-        if(error != nil){
+        if(error == nil){
         
             let task = self.session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
             
-                let responseCode = response as! NSHTTPURLResponse
-                
-                if (responseCode == 200){
-                
+                let responseHeaders = response as! NSHTTPURLResponse
+
+                if (responseHeaders.statusCode == 200){
+
                     var jsonError: NSErrorPointer = NSErrorPointer()
                     
                     if let jsonDecoded = NSJSONSerialization.JSONObjectWithData(data , options: nil, error: jsonError) as? NSDictionary{
-                        
+
                         self.defaults.setValue(jsonDecoded["access_token"], forKey: "access_token")
                     
                     }
-                }else if (responseCode == 401) {
+                }else if (responseHeaders.statusCode == 401) {
                     
                 }
             })
@@ -69,4 +70,30 @@ class OAuthService{
         
         }
     }
+    
+    func getAccessToken()->String?{
+        if let token = self.defaults.stringForKey("access_token"){
+            return token
+        }
+        return nil
+    }
+
+    func get(resource: String, callback: (result: NSData?, error: NSDictionary?)->Void){
+        let url = NSURL(string: resource, relativeToURL: self.apiURL)
+        
+        let getRequest = NSMutableURLRequest(URL: url!)
+        // The access_token exits
+        if let access_token: NSString = self.defaults.valueForKey("access_token") as? NSString{
+
+            getRequest.setValue("Bearer \(access_token)", forHTTPHeaderField: "Authorization")
+            let task = self.session.dataTaskWithRequest(getRequest, completionHandler: { (data, response, error) -> Void in
+                callback(result: data, error: nil)
+            })
+            task.resume()
+            
+        }else{
+            callback(result: nil, error: ["reason": "The access token is not present"])
+        }
+    }
+    
 }

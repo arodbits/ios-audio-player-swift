@@ -11,13 +11,7 @@ import UIKit
 
 class OAuthApi{
     
-    func getAccessToken()->String?{
-        if let token = self.defaults.stringForKey("access_token"){
-            return token
-        }
-        return nil
-    }
-    
+        
     func get(){
         
     }
