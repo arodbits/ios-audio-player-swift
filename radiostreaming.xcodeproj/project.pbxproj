@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AE4E685D1B00F17000F455B4 /* PromotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4E685C1B00F17000F455B4 /* PromotionService.swift */; };
-		AE4E68611B0240E800F455B4 /* OAuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4E68601B0240E800F455B4 /* OAuthApi.swift */; };
 		AE5528D41B06E206001D9D0C /* radiostreaming_0009_color-blurry-background.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528D31B06E206001D9D0C /* radiostreaming_0009_color-blurry-background.png */; };
 		AE5528D61B06E8F9001D9D0C /* radiostreaming_0007_Ellipse-1-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528D51B06E8F9001D9D0C /* radiostreaming_0007_Ellipse-1-copy.png */; };
 		AE5528D81B07809F001D9D0C /* radiostreaming_0010_Rectangle-1.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528D71B07809F001D9D0C /* radiostreaming_0010_Rectangle-1.png */; };
@@ -20,6 +19,8 @@
 		AE5528E41B0791C7001D9D0C /* radiostreaming_0018_Shape-1.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528E31B0791C7001D9D0C /* radiostreaming_0018_Shape-1.png */; };
 		AE5528E61B079546001D9D0C /* back-32.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528E51B079546001D9D0C /* back-32.png */; };
 		AE5528E81B07AC8F001D9D0C /* RadioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5528E71B07AC8F001D9D0C /* RadioService.swift */; };
+		AE5528EA1B091D99001D9D0C /* introController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5528E91B091D99001D9D0C /* introController.swift */; };
+		AE5528EC1B093722001D9D0C /* DataProviderContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5528EB1B093722001D9D0C /* DataProviderContract.swift */; };
 		AE5C98771AEDB8A6008593F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C98761AEDB8A6008593F5 /* AppDelegate.swift */; };
 		AE5C987A1AEDB8A6008593F5 /* radiostreaming.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE5C98781AEDB8A6008593F5 /* radiostreaming.xcdatamodeld */; };
 		AE5C987C1AEDB8A6008593F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C987B1AEDB8A6008593F5 /* ViewController.swift */; };
@@ -37,7 +38,6 @@
 		AE5DFEDD1AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED41AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png */; };
 		AE5DFEDE1AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED51AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png */; };
 		AE5DFEDF1AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED61AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png */; };
-		AE82B55C1B00233400BDFB76 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE82B55B1B00233400BDFB76 /* DataProvider.swift */; };
 		AE9591D91AFD1E30003CD36E /* OAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9591D81AFD1E30003CD36E /* OAuthService.swift */; };
 		AE9591DB1AFD25C3003CD36E /* EventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9591DA1AFD25C3003CD36E /* EventsController.swift */; };
 		AE9591DD1AFD3A2D003CD36E /* EventsCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9591DC1AFD3A2D003CD36E /* EventsCells.swift */; };
@@ -56,7 +56,6 @@
 
 /* Begin PBXFileReference section */
 		AE4E685C1B00F17000F455B4 /* PromotionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionService.swift; sourceTree = "<group>"; };
-		AE4E68601B0240E800F455B4 /* OAuthApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthApi.swift; sourceTree = "<group>"; };
 		AE5528D31B06E206001D9D0C /* radiostreaming_0009_color-blurry-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0009_color-blurry-background.png"; sourceTree = "<group>"; };
 		AE5528D51B06E8F9001D9D0C /* radiostreaming_0007_Ellipse-1-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0007_Ellipse-1-copy.png"; sourceTree = "<group>"; };
 		AE5528D71B07809F001D9D0C /* radiostreaming_0010_Rectangle-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0010_Rectangle-1.png"; sourceTree = "<group>"; };
@@ -68,6 +67,8 @@
 		AE5528E31B0791C7001D9D0C /* radiostreaming_0018_Shape-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0018_Shape-1.png"; sourceTree = "<group>"; };
 		AE5528E51B079546001D9D0C /* back-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-32.png"; sourceTree = "<group>"; };
 		AE5528E71B07AC8F001D9D0C /* RadioService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioService.swift; sourceTree = "<group>"; };
+		AE5528E91B091D99001D9D0C /* introController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = introController.swift; sourceTree = "<group>"; };
+		AE5528EB1B093722001D9D0C /* DataProviderContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviderContract.swift; sourceTree = "<group>"; };
 		AE5C98711AEDB8A6008593F5 /* radiostreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = radiostreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5C98751AEDB8A6008593F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5C98761AEDB8A6008593F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +90,6 @@
 		AE5DFED41AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0001s_0001_RADIO-PROEZAS.png"; sourceTree = "<group>"; };
 		AE5DFED51AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0002s_0000_stop.png; sourceTree = "<group>"; };
 		AE5DFED61AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0002s_0001_play.png; sourceTree = "<group>"; };
-		AE82B55B1B00233400BDFB76 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		AE9591D81AFD1E30003CD36E /* OAuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthService.swift; sourceTree = "<group>"; };
 		AE9591DA1AFD25C3003CD36E /* EventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsController.swift; sourceTree = "<group>"; };
 		AE9591DC1AFD3A2D003CD36E /* EventsCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsCells.swift; sourceTree = "<group>"; };
@@ -117,6 +117,7 @@
 		AE5528D21B024800001D9D0C /* contracts */ = {
 			isa = PBXGroup;
 			children = (
+				AE5528EB1B093722001D9D0C /* DataProviderContract.swift */,
 			);
 			name = contracts;
 			sourceTree = "<group>";
@@ -153,6 +154,7 @@
 				AE5C98821AEDB8A6008593F5 /* LaunchScreen.xib */,
 				AE5C98781AEDB8A6008593F5 /* radiostreaming.xcdatamodeld */,
 				AE9591DC1AFD3A2D003CD36E /* EventsCells.swift */,
+				AE5528E91B091D99001D9D0C /* introController.swift */,
 			);
 			path = radiostreaming;
 			sourceTree = "<group>";
@@ -208,9 +210,7 @@
 			children = (
 				AE5C989A1AEED8FC008593F5 /* PlayerService.swift */,
 				AE9591D81AFD1E30003CD36E /* OAuthService.swift */,
-				AE82B55B1B00233400BDFB76 /* DataProvider.swift */,
 				AE4E685C1B00F17000F455B4 /* PromotionService.swift */,
-				AE4E68601B0240E800F455B4 /* OAuthApi.swift */,
 				AE5528E71B07AC8F001D9D0C /* RadioService.swift */,
 			);
 			name = services;
@@ -336,16 +336,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5528EA1B091D99001D9D0C /* introController.swift in Sources */,
 				AE9591DB1AFD25C3003CD36E /* EventsController.swift in Sources */,
 				AE5C989B1AEED8FC008593F5 /* PlayerService.swift in Sources */,
-				AE82B55C1B00233400BDFB76 /* DataProvider.swift in Sources */,
 				AE5528E81B07AC8F001D9D0C /* RadioService.swift in Sources */,
 				AE5C987C1AEDB8A6008593F5 /* ViewController.swift in Sources */,
+				AE5528EC1B093722001D9D0C /* DataProviderContract.swift in Sources */,
 				AE9591DD1AFD3A2D003CD36E /* EventsCells.swift in Sources */,
 				AE9591D91AFD1E30003CD36E /* OAuthService.swift in Sources */,
 				AE4E685D1B00F17000F455B4 /* PromotionService.swift in Sources */,
 				AE5C987A1AEDB8A6008593F5 /* radiostreaming.xcdatamodeld in Sources */,
-				AE4E68611B0240E800F455B4 /* OAuthApi.swift in Sources */,
 				AE5C98771AEDB8A6008593F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

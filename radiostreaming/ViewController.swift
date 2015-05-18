@@ -13,8 +13,12 @@ class ViewController: UIViewController {
     let player = PlayerService()
     let defaults = NSUserDefaults.standardUserDefaults()
     
+    var radioData: NSDictionary = NSDictionary()
+    var r:NSDictionary = NSDictionary()
    
-    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var slogan: UILabel!
+ 
 
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
@@ -30,15 +34,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.stopButton.hidden = true
-        
-        let oauth = OAuthService()
-        oauth.run()
-        
-        let radioService = RadioService()
-        radioService.find(4, callback: { (result, error) -> Void in
-          let radio = NSJSONSerialization.JSONObjectWithData(result!, options: nil, error: nil) as! NSDictionary
-            self.title.text = String(stringInterpolationSegment: radio["title"]!)
-        })
+        self.name.text = self.radioData["name"]! as? String
+        self.slogan.text = self.radioData["slogan"]! as? String
         
         // Do any additional setup after loading the view, typically from a nib.
     }

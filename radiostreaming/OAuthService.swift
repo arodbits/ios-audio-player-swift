@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class OAuthService{
+class OAuthService: DataProviderContract{
     
     let client_id: NSString
     let client_secret: NSString
@@ -25,7 +25,25 @@ class OAuthService{
         self.grant_type = "client_credentials"
     }
     
-    func run(){
+    func checkConnectivity(success: (response: NSDictionary?)->Void){
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://google.com")!)
+        let timeout = NSTimeInterval(5)
+        request.timeoutInterval = timeout
+        let connectivityTask = self.session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
+            if let res = response{
+                let httpResponse = res as! NSHTTPURLResponse
+                let responseCode = httpResponse.statusCode
+                if (responseCode == 200){
+                    success(response: ["status_code" : 200])
+                }
+            }else{
+                success(response: nil)
+            }
+        })
+        connectivityTask.resume()
+    }
+    
+    func run(success: (response: NSDictionary)->Void){
         
         let url = NSURL(string: "api/access_token", relativeToURL: self.apiURL)
         
@@ -59,6 +77,7 @@ class OAuthService{
                     if let jsonDecoded = NSJSONSerialization.JSONObjectWithData(data , options: nil, error: jsonError) as? NSDictionary{
 
                         self.defaults.setValue(jsonDecoded["access_token"], forKey: "access_token")
+                        success(response: ["access_token" : jsonDecoded["access_token"]!])
                     
                     }
                 }else if (responseHeaders.statusCode == 401) {
