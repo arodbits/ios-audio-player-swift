@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     let player = PlayerService()
     let defaults = NSUserDefaults.standardUserDefaults()
-    
+    // radioData data is aquired from the introController View before this viewController is executed!
     var radioData: NSDictionary = NSDictionary()
 
    
@@ -33,25 +33,36 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        //Bootstraping
         self.stopButton.hidden = true
-        self.name.text = self.radioData["name"]! as? String
-        self.slogan.text = self.radioData["slogan"]! as? String
-        let imageData = NSData(base64EncodedString: (self.radioData["logo"]! as? String)!, options: nil)
-        self.logoImage.image = UIImage(data: imageData!)
-
+        self.displayRadioData()
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func prefersStatusBarHidden() -> Bool {
-        return true
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    //Hide status Bar
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
+    func displayRadioData(){
+        if let name = self.radioData["name"] as? String{
+            self.name.text = name
+        }
+        if let slogan = self.radioData["slogan"] as? String{
+            self.slogan.text = slogan
+        }
+        if let image64base = self.radioData["logo"] as? String{
+            let imageData = NSData(base64EncodedString: (image64base), options: nil)
+            self.logoImage.image = UIImage(data: imageData!)
+        }
+    }
+    
+    //Streaming actions
     func toggleButton(me: UIButton, next: UIButton){
         me.hidden = !me.hidden
         next.hidden = !next.hidden
@@ -67,10 +78,14 @@ class ViewController: UIViewController {
         self.toggleButton(sender, next: self.playButton)
     }
     
+    // Volume action
+    
     @IBAction func volumenSlider(sender: UISlider) {
        self.player.volume(sender.value)
         
     }
+    
+    //Social actions
     @IBAction func twitterPressed(sender: UIButton) {
         UIApplication.sharedApplication().openURL(NSURL(string: "https://twitter.com/momentodedios")!)
     }
