@@ -28,12 +28,12 @@ class IntroController: UIViewController{
         self.run()
     }
     override func viewDidLoad(){
-
+        super.viewDidLoad()
         //Bootstraping
         // Set activity indicator hidden when stopped
         self.activityIndicator.hidesWhenStopped = true;
         self.run()
-        super.viewDidLoad()
+        
     }
     
     func run(){
@@ -106,13 +106,16 @@ class IntroController: UIViewController{
             let playerController = segue.destinationViewController as! ViewController
             let radioData: NSDictionary = NSJSONSerialization.JSONObjectWithData(sender as! NSData, options: nil, error: nil) as! NSDictionary
             playerController.radioData = radioData
+
         }
     }
     
     func radioProfileData(id: Int){
         self.dataProvider.get("api/radio/\(id)", callback: { (result, error) -> Void in
             if let res = result{
-                self.performSegueWithIdentifier("toPlayer", sender: result)
+                NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                    self.performSegueWithIdentifier("toPlayer", sender: result)
+                })
             }
         })
     }

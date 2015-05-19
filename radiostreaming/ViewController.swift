@@ -14,10 +14,11 @@ class ViewController: UIViewController {
     let defaults = NSUserDefaults.standardUserDefaults()
     
     var radioData: NSDictionary = NSDictionary()
-    var r:NSDictionary = NSDictionary()
+
    
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var slogan: UILabel!
+    @IBOutlet weak var logoImage: UIImageView!
  
 
     @IBOutlet weak var playButton: UIButton!
@@ -32,11 +33,13 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         self.stopButton.hidden = true
         self.name.text = self.radioData["name"]! as? String
         self.slogan.text = self.radioData["slogan"]! as? String
-        
+        let imageData = NSData(base64EncodedString: (self.radioData["logo"]! as? String)!, options: nil)
+        self.logoImage.image = UIImage(data: imageData!)
+
+        super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
