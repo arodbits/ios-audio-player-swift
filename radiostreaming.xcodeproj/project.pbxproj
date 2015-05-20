@@ -21,6 +21,23 @@
 		AE5528E81B07AC8F001D9D0C /* RadioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5528E71B07AC8F001D9D0C /* RadioService.swift */; };
 		AE5528EA1B091D99001D9D0C /* introController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5528E91B091D99001D9D0C /* introController.swift */; };
 		AE5528EC1B093722001D9D0C /* DataProviderContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5528EB1B093722001D9D0C /* DataProviderContract.swift */; };
+		AE5528FF1B0BF12F001D9D0C /* radiostreaming_0000s_0000_Rectangle-5-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528EF1B0BF12F001D9D0C /* radiostreaming_0000s_0000_Rectangle-5-copy.png */; };
+		AE5529001B0BF12F001D9D0C /* radiostreaming_0000s_0001_Ellipse-1-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528F01B0BF12F001D9D0C /* radiostreaming_0000s_0001_Ellipse-1-copy.png */; };
+		AE5529011B0BF12F001D9D0C /* radiostreaming_0001_Events.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528F11B0BF12F001D9D0C /* radiostreaming_0001_Events.png */; };
+		AE5529021B0BF12F001D9D0C /* radiostreaming_0001s_0000_Rectangle-1.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528F21B0BF12F001D9D0C /* radiostreaming_0001s_0000_Rectangle-1.png */; };
+		AE5529031B0BF12F001D9D0C /* radiostreaming_0002_Rectangle-4.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528F31B0BF12F001D9D0C /* radiostreaming_0002_Rectangle-4.png */; };
+		AE5529041B0BF12F001D9D0C /* radiostreaming_0003_En-Cristo-Podemos!.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528F41B0BF12F001D9D0C /* radiostreaming_0003_En-Cristo-Podemos!.png */; };
+		AE5529051B0BF12F001D9D0C /* radiostreaming_0004_RADIO-PROEZAS.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528F51B0BF12F001D9D0C /* radiostreaming_0004_RADIO-PROEZAS.png */; };
+		AE5529061B0BF12F001D9D0C /* radiostreaming_0005_Rectangle-3.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528F61B0BF12F001D9D0C /* radiostreaming_0005_Rectangle-3.png */; };
+		AE5529071B0BF12F001D9D0C /* radiostreaming_0006_10321209_231771047018731_3561019014082266285_o.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528F71B0BF12F001D9D0C /* radiostreaming_0006_10321209_231771047018731_3561019014082266285_o.png */; };
+		AE5529081B0BF12F001D9D0C /* radiostreaming_0007_radiostreaming_0000s_0003_instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528F81B0BF12F001D9D0C /* radiostreaming_0007_radiostreaming_0000s_0003_instagram.png */; };
+		AE5529091B0BF12F001D9D0C /* radiostreaming_0008_radiostreaming_0000s_0002_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528F91B0BF12F001D9D0C /* radiostreaming_0008_radiostreaming_0000s_0002_twitter.png */; };
+		AE55290A1B0BF12F001D9D0C /* radiostreaming_0009_radiostreaming_0000s_0001_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528FA1B0BF12F001D9D0C /* radiostreaming_0009_radiostreaming_0000s_0001_facebook.png */; };
+		AE55290B1B0BF12F001D9D0C /* radiostreaming_0010_radiostreaming_0000s_0000_youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528FB1B0BF12F001D9D0C /* radiostreaming_0010_radiostreaming_0000s_0000_youtube.png */; };
+		AE55290C1B0BF12F001D9D0C /* radiostreaming_0011_Rectangle-2.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528FC1B0BF12F001D9D0C /* radiostreaming_0011_Rectangle-2.png */; };
+		AE55290D1B0BF12F001D9D0C /* radiostreaming_0012_10321209_231771047018731_3561019014082266285_o.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528FD1B0BF12F001D9D0C /* radiostreaming_0012_10321209_231771047018731_3561019014082266285_o.png */; };
+		AE55290F1B0C27A5001D9D0C /* radiostreaming_0000_today-32.png in Resources */ = {isa = PBXBuildFile; fileRef = AE55290E1B0C27A5001D9D0C /* radiostreaming_0000_today-32.png */; };
+		AE5529111B0C28C9001D9D0C /* red-background-blur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AE5529101B0C28C9001D9D0C /* red-background-blur.jpg */; };
 		AE5C98771AEDB8A6008593F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C98761AEDB8A6008593F5 /* AppDelegate.swift */; };
 		AE5C987A1AEDB8A6008593F5 /* radiostreaming.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE5C98781AEDB8A6008593F5 /* radiostreaming.xcdatamodeld */; };
 		AE5C987C1AEDB8A6008593F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C987B1AEDB8A6008593F5 /* ViewController.swift */; };
@@ -30,18 +47,9 @@
 		AE5C98901AEDB8A6008593F5 /* radiostreamingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C988F1AEDB8A6008593F5 /* radiostreamingTests.swift */; };
 		AE5C989B1AEED8FC008593F5 /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C989A1AEED8FC008593F5 /* PlayerService.swift */; };
 		AE5DFED71AEFD88B00A32EB1 /* radiostreaming_0000_background.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFECE1AEFD88B00A32EB1 /* radiostreaming_0000_background.png */; };
-		AE5DFED81AEFD88B00A32EB1 /* radiostreaming_0000s_0000_youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFECF1AEFD88B00A32EB1 /* radiostreaming_0000s_0000_youtube.png */; };
-		AE5DFED91AEFD88B00A32EB1 /* radiostreaming_0000s_0001_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED01AEFD88B00A32EB1 /* radiostreaming_0000s_0001_facebook.png */; };
-		AE5DFEDA1AEFD88B00A32EB1 /* radiostreaming_0000s_0002_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED11AEFD88B00A32EB1 /* radiostreaming_0000s_0002_twitter.png */; };
-		AE5DFEDB1AEFD88B00A32EB1 /* radiostreaming_0000s_0003_instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED21AEFD88B00A32EB1 /* radiostreaming_0000s_0003_instagram.png */; };
-		AE5DFEDC1AEFD88B00A32EB1 /* radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED31AEFD88B00A32EB1 /* radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png */; };
-		AE5DFEDD1AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED41AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png */; };
-		AE5DFEDE1AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED51AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png */; };
-		AE5DFEDF1AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5DFED61AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png */; };
 		AE9591D91AFD1E30003CD36E /* OAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9591D81AFD1E30003CD36E /* OAuthService.swift */; };
 		AE9591DB1AFD25C3003CD36E /* EventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9591DA1AFD25C3003CD36E /* EventsController.swift */; };
 		AE9591DD1AFD3A2D003CD36E /* EventsCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9591DC1AFD3A2D003CD36E /* EventsCells.swift */; };
-		AEAA285D1AF02F4900332C75 /* radiostreaming_0000_promo1.png in Resources */ = {isa = PBXBuildFile; fileRef = AEAA285C1AF02F4900332C75 /* radiostreaming_0000_promo1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +77,23 @@
 		AE5528E71B07AC8F001D9D0C /* RadioService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioService.swift; sourceTree = "<group>"; };
 		AE5528E91B091D99001D9D0C /* introController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = introController.swift; sourceTree = "<group>"; };
 		AE5528EB1B093722001D9D0C /* DataProviderContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProviderContract.swift; sourceTree = "<group>"; };
+		AE5528EF1B0BF12F001D9D0C /* radiostreaming_0000s_0000_Rectangle-5-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0000s_0000_Rectangle-5-copy.png"; sourceTree = "<group>"; };
+		AE5528F01B0BF12F001D9D0C /* radiostreaming_0000s_0001_Ellipse-1-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0000s_0001_Ellipse-1-copy.png"; sourceTree = "<group>"; };
+		AE5528F11B0BF12F001D9D0C /* radiostreaming_0001_Events.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0001_Events.png; sourceTree = "<group>"; };
+		AE5528F21B0BF12F001D9D0C /* radiostreaming_0001s_0000_Rectangle-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0001s_0000_Rectangle-1.png"; sourceTree = "<group>"; };
+		AE5528F31B0BF12F001D9D0C /* radiostreaming_0002_Rectangle-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0002_Rectangle-4.png"; sourceTree = "<group>"; };
+		AE5528F41B0BF12F001D9D0C /* radiostreaming_0003_En-Cristo-Podemos!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0003_En-Cristo-Podemos!.png"; sourceTree = "<group>"; };
+		AE5528F51B0BF12F001D9D0C /* radiostreaming_0004_RADIO-PROEZAS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0004_RADIO-PROEZAS.png"; sourceTree = "<group>"; };
+		AE5528F61B0BF12F001D9D0C /* radiostreaming_0005_Rectangle-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0005_Rectangle-3.png"; sourceTree = "<group>"; };
+		AE5528F71B0BF12F001D9D0C /* radiostreaming_0006_10321209_231771047018731_3561019014082266285_o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0006_10321209_231771047018731_3561019014082266285_o.png; sourceTree = "<group>"; };
+		AE5528F81B0BF12F001D9D0C /* radiostreaming_0007_radiostreaming_0000s_0003_instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0007_radiostreaming_0000s_0003_instagram.png; sourceTree = "<group>"; };
+		AE5528F91B0BF12F001D9D0C /* radiostreaming_0008_radiostreaming_0000s_0002_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0008_radiostreaming_0000s_0002_twitter.png; sourceTree = "<group>"; };
+		AE5528FA1B0BF12F001D9D0C /* radiostreaming_0009_radiostreaming_0000s_0001_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0009_radiostreaming_0000s_0001_facebook.png; sourceTree = "<group>"; };
+		AE5528FB1B0BF12F001D9D0C /* radiostreaming_0010_radiostreaming_0000s_0000_youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0010_radiostreaming_0000s_0000_youtube.png; sourceTree = "<group>"; };
+		AE5528FC1B0BF12F001D9D0C /* radiostreaming_0011_Rectangle-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0011_Rectangle-2.png"; sourceTree = "<group>"; };
+		AE5528FD1B0BF12F001D9D0C /* radiostreaming_0012_10321209_231771047018731_3561019014082266285_o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0012_10321209_231771047018731_3561019014082266285_o.png; sourceTree = "<group>"; };
+		AE55290E1B0C27A5001D9D0C /* radiostreaming_0000_today-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0000_today-32.png"; sourceTree = "<group>"; };
+		AE5529101B0C28C9001D9D0C /* red-background-blur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red-background-blur.jpg"; sourceTree = "<group>"; };
 		AE5C98711AEDB8A6008593F5 /* radiostreaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = radiostreaming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5C98751AEDB8A6008593F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5C98761AEDB8A6008593F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,18 +107,9 @@
 		AE5C988F1AEDB8A6008593F5 /* radiostreamingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radiostreamingTests.swift; sourceTree = "<group>"; };
 		AE5C989A1AEED8FC008593F5 /* PlayerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
 		AE5DFECE1AEFD88B00A32EB1 /* radiostreaming_0000_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0000_background.png; sourceTree = "<group>"; };
-		AE5DFECF1AEFD88B00A32EB1 /* radiostreaming_0000s_0000_youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0000s_0000_youtube.png; sourceTree = "<group>"; };
-		AE5DFED01AEFD88B00A32EB1 /* radiostreaming_0000s_0001_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0000s_0001_facebook.png; sourceTree = "<group>"; };
-		AE5DFED11AEFD88B00A32EB1 /* radiostreaming_0000s_0002_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0000s_0002_twitter.png; sourceTree = "<group>"; };
-		AE5DFED21AEFD88B00A32EB1 /* radiostreaming_0000s_0003_instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0000s_0003_instagram.png; sourceTree = "<group>"; };
-		AE5DFED31AEFD88B00A32EB1 /* radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png"; sourceTree = "<group>"; };
-		AE5DFED41AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0001s_0001_RADIO-PROEZAS.png"; sourceTree = "<group>"; };
-		AE5DFED51AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0002s_0000_stop.png; sourceTree = "<group>"; };
-		AE5DFED61AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0002s_0001_play.png; sourceTree = "<group>"; };
 		AE9591D81AFD1E30003CD36E /* OAuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthService.swift; sourceTree = "<group>"; };
 		AE9591DA1AFD25C3003CD36E /* EventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsController.swift; sourceTree = "<group>"; };
 		AE9591DC1AFD3A2D003CD36E /* EventsCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsCells.swift; sourceTree = "<group>"; };
-		AEAA285C1AF02F4900332C75 /* radiostreaming_0000_promo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radiostreaming_0000_promo1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +136,33 @@
 				AE5528EB1B093722001D9D0C /* DataProviderContract.swift */,
 			);
 			name = contracts;
+			sourceTree = "<group>";
+		};
+		AE5528ED1B0BEA92001D9D0C /* UIFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AE5528EF1B0BF12F001D9D0C /* radiostreaming_0000s_0000_Rectangle-5-copy.png */,
+				AE55290E1B0C27A5001D9D0C /* radiostreaming_0000_today-32.png */,
+				AE5528F01B0BF12F001D9D0C /* radiostreaming_0000s_0001_Ellipse-1-copy.png */,
+				AE5529101B0C28C9001D9D0C /* red-background-blur.jpg */,
+				AE5528F11B0BF12F001D9D0C /* radiostreaming_0001_Events.png */,
+				AE5528E51B079546001D9D0C /* back-32.png */,
+				AE5528F31B0BF12F001D9D0C /* radiostreaming_0002_Rectangle-4.png */,
+				AE5528F21B0BF12F001D9D0C /* radiostreaming_0001s_0000_Rectangle-1.png */,
+				AE5528F41B0BF12F001D9D0C /* radiostreaming_0003_En-Cristo-Podemos!.png */,
+				AE5528F51B0BF12F001D9D0C /* radiostreaming_0004_RADIO-PROEZAS.png */,
+				AE5528F61B0BF12F001D9D0C /* radiostreaming_0005_Rectangle-3.png */,
+				AE5528F71B0BF12F001D9D0C /* radiostreaming_0006_10321209_231771047018731_3561019014082266285_o.png */,
+				AE5528F81B0BF12F001D9D0C /* radiostreaming_0007_radiostreaming_0000s_0003_instagram.png */,
+				AE5528F91B0BF12F001D9D0C /* radiostreaming_0008_radiostreaming_0000s_0002_twitter.png */,
+				AE5528DF1B078679001D9D0C /* radiostreaming_0008_Ellipse-1.png */,
+				AE5528FA1B0BF12F001D9D0C /* radiostreaming_0009_radiostreaming_0000s_0001_facebook.png */,
+				AE5528FB1B0BF12F001D9D0C /* radiostreaming_0010_radiostreaming_0000s_0000_youtube.png */,
+				AE5528E11B078DB8001D9D0C /* radiostreaming_0021_Rounded-Rectangle-1.png */,
+				AE5528FC1B0BF12F001D9D0C /* radiostreaming_0011_Rectangle-2.png */,
+				AE5528FD1B0BF12F001D9D0C /* radiostreaming_0012_10321209_231771047018731_3561019014082266285_o.png */,
+			);
+			name = UIFiles;
 			sourceTree = "<group>";
 		};
 		AE5C98681AEDB8A6008593F5 = {
@@ -162,24 +205,13 @@
 		AE5C98741AEDB8A6008593F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AE5528ED1B0BEA92001D9D0C /* UIFiles */,
 				AE5528D31B06E206001D9D0C /* radiostreaming_0009_color-blurry-background.png */,
 				AE5528D51B06E8F9001D9D0C /* radiostreaming_0007_Ellipse-1-copy.png */,
 				AE5DFECE1AEFD88B00A32EB1 /* radiostreaming_0000_background.png */,
-				AE5DFECF1AEFD88B00A32EB1 /* radiostreaming_0000s_0000_youtube.png */,
-				AE5528E51B079546001D9D0C /* back-32.png */,
-				AEAA285C1AF02F4900332C75 /* radiostreaming_0000_promo1.png */,
-				AE5DFED01AEFD88B00A32EB1 /* radiostreaming_0000s_0001_facebook.png */,
-				AE5DFED11AEFD88B00A32EB1 /* radiostreaming_0000s_0002_twitter.png */,
-				AE5528E11B078DB8001D9D0C /* radiostreaming_0021_Rounded-Rectangle-1.png */,
-				AE5DFED21AEFD88B00A32EB1 /* radiostreaming_0000s_0003_instagram.png */,
 				AE5528E31B0791C7001D9D0C /* radiostreaming_0018_Shape-1.png */,
-				AE5DFED31AEFD88B00A32EB1 /* radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png */,
-				AE5DFED41AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png */,
-				AE5DFED51AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png */,
-				AE5DFED61AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png */,
 				AE5528D71B07809F001D9D0C /* radiostreaming_0010_Rectangle-1.png */,
 				AE5528D91B07814E001D9D0C /* radiostreaming_0013_bg-darken.png */,
-				AE5528DF1B078679001D9D0C /* radiostreaming_0008_Ellipse-1.png */,
 				AE5528DB1B07824D001D9D0C /* radiostreaming_0002_EVENTS.png */,
 				AE5528DD1B078270001D9D0C /* radiostreaming_0003_today-32.png */,
 				AE5C98751AEDB8A6008593F5 /* Info.plist */,
@@ -296,29 +328,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEAA285D1AF02F4900332C75 /* radiostreaming_0000_promo1.png in Resources */,
+				AE5529041B0BF12F001D9D0C /* radiostreaming_0003_En-Cristo-Podemos!.png in Resources */,
 				AE5528DC1B07824D001D9D0C /* radiostreaming_0002_EVENTS.png in Resources */,
 				AE5528D41B06E206001D9D0C /* radiostreaming_0009_color-blurry-background.png in Resources */,
 				AE5DFED71AEFD88B00A32EB1 /* radiostreaming_0000_background.png in Resources */,
-				AE5DFED81AEFD88B00A32EB1 /* radiostreaming_0000s_0000_youtube.png in Resources */,
-				AE5DFEDE1AEFD88B00A32EB1 /* radiostreaming_0002s_0000_stop.png in Resources */,
+				AE5529001B0BF12F001D9D0C /* radiostreaming_0000s_0001_Ellipse-1-copy.png in Resources */,
+				AE55290A1B0BF12F001D9D0C /* radiostreaming_0009_radiostreaming_0000s_0001_facebook.png in Resources */,
 				AE5528D61B06E8F9001D9D0C /* radiostreaming_0007_Ellipse-1-copy.png in Resources */,
-				AE5DFEDF1AEFD88B00A32EB1 /* radiostreaming_0002s_0001_play.png in Resources */,
 				AE5C987F1AEDB8A6008593F5 /* Main.storyboard in Resources */,
-				AE5DFED91AEFD88B00A32EB1 /* radiostreaming_0000s_0001_facebook.png in Resources */,
+				AE55290D1B0BF12F001D9D0C /* radiostreaming_0012_10321209_231771047018731_3561019014082266285_o.png in Resources */,
+				AE5528FF1B0BF12F001D9D0C /* radiostreaming_0000s_0000_Rectangle-5-copy.png in Resources */,
+				AE5529071B0BF12F001D9D0C /* radiostreaming_0006_10321209_231771047018731_3561019014082266285_o.png in Resources */,
+				AE55290C1B0BF12F001D9D0C /* radiostreaming_0011_Rectangle-2.png in Resources */,
+				AE5529081B0BF12F001D9D0C /* radiostreaming_0007_radiostreaming_0000s_0003_instagram.png in Resources */,
 				AE5528D81B07809F001D9D0C /* radiostreaming_0010_Rectangle-1.png in Resources */,
-				AE5DFEDC1AEFD88B00A32EB1 /* radiostreaming_0001s_0000_EN-CRISTO-PODEMOS!.png in Resources */,
+				AE5529051B0BF12F001D9D0C /* radiostreaming_0004_RADIO-PROEZAS.png in Resources */,
+				AE55290F1B0C27A5001D9D0C /* radiostreaming_0000_today-32.png in Resources */,
+				AE5529061B0BF12F001D9D0C /* radiostreaming_0005_Rectangle-3.png in Resources */,
 				AE5528DA1B07814E001D9D0C /* radiostreaming_0013_bg-darken.png in Resources */,
 				AE5528E01B078679001D9D0C /* radiostreaming_0008_Ellipse-1.png in Resources */,
 				AE5528DE1B078270001D9D0C /* radiostreaming_0003_today-32.png in Resources */,
-				AE5DFEDB1AEFD88B00A32EB1 /* radiostreaming_0000s_0003_instagram.png in Resources */,
+				AE5529031B0BF12F001D9D0C /* radiostreaming_0002_Rectangle-4.png in Resources */,
 				AE5528E21B078DB8001D9D0C /* radiostreaming_0021_Rounded-Rectangle-1.png in Resources */,
+				AE5529021B0BF12F001D9D0C /* radiostreaming_0001s_0000_Rectangle-1.png in Resources */,
 				AE5528E41B0791C7001D9D0C /* radiostreaming_0018_Shape-1.png in Resources */,
 				AE5C98841AEDB8A6008593F5 /* LaunchScreen.xib in Resources */,
 				AE5528E61B079546001D9D0C /* back-32.png in Resources */,
-				AE5DFEDA1AEFD88B00A32EB1 /* radiostreaming_0000s_0002_twitter.png in Resources */,
+				AE5529111B0C28C9001D9D0C /* red-background-blur.jpg in Resources */,
 				AE5C98811AEDB8A6008593F5 /* Images.xcassets in Resources */,
-				AE5DFEDD1AEFD88B00A32EB1 /* radiostreaming_0001s_0001_RADIO-PROEZAS.png in Resources */,
+				AE5529011B0BF12F001D9D0C /* radiostreaming_0001_Events.png in Resources */,
+				AE55290B1B0BF12F001D9D0C /* radiostreaming_0010_radiostreaming_0000s_0000_youtube.png in Resources */,
+				AE5529091B0BF12F001D9D0C /* radiostreaming_0008_radiostreaming_0000s_0002_twitter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

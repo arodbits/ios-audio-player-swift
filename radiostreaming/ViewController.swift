@@ -15,17 +15,28 @@ class ViewController: UIViewController {
     // radioData data is aquired from the introController View before this viewController is executed!
     var radioData: NSDictionary = NSDictionary()
 
-   
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var slogan: UILabel!
     @IBOutlet weak var logoImage: UIImageView!
- 
-
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
     @IBAction func eventsPressed(sender: UIButton) {
-        performSegueWithIdentifier("playerTOEvents", sender: AnyObject?())
+        NSOperationQueue.mainQueue().addOperationWithBlock { () -> Void in
+            self.performSegueWithIdentifier("playerTOEvents", sender: AnyObject?())
+        }
+
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let id = segue.identifier
+        if id == "playerTOEvents"{
+            let eventsController = segue.destinationViewController as? EventsController
+            
+            eventsController?.backgroundImage = self.backgroundImage.image!
+            
+        }
     }
     
     @IBAction func backFromEventsController(segue:UIStoryboardSegue){
@@ -59,6 +70,7 @@ class ViewController: UIViewController {
         if let image64base = self.radioData["logo"] as? String{
             let imageData = NSData(base64EncodedString: (image64base), options: nil)
             self.logoImage.image = UIImage(data: imageData!)
+            self.backgroundImage.image = UIImage(data: imageData!)
         }
     }
     
@@ -87,16 +99,27 @@ class ViewController: UIViewController {
     
     //Social actions
     @IBAction func twitterPressed(sender: UIButton) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "https://twitter.com/momentodedios")!)
+        
+        if let twitterUrl = self.radioData["twitter"] as? String {
+            UIApplication.sharedApplication().openURL(NSURL(string: twitterUrl)!)
+        }
+        
     }
     @IBAction func instagramPressed(sender: UIButton) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "https://instagram.com/anthonymdd/")!)
+        if let instagramUrl = self.radioData["instagram"] as? String {
+            UIApplication.sharedApplication().openURL(NSURL(string: instagramUrl)!)
+        }
     }
     @IBAction func facebookPressed(sender: UIButton) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "https://www.facebook.com/momentodedios")!)
+        if let facebookUrl = self.radioData["facebook"] as? String {
+            print(facebookUrl)
+            UIApplication.sharedApplication().openURL(NSURL(string: facebookUrl)!)
+        }
     }
     @IBAction func youtubePressed(sender: UIButton) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "https://www.youtube.com/user/MomentodeDios")!)
+        if let youtubeUrl = self.radioData["youtube"] as? String {
+            UIApplication.sharedApplication().openURL(NSURL(string: youtubeUrl)!)
+        }
     }
 }
 

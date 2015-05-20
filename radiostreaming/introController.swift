@@ -15,6 +15,7 @@ class IntroController: UIViewController{
     @IBOutlet weak var connectButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var loadingLabel: UILabel!
+    @IBOutlet weak var pleaseWait: UILabel!
     
     var dataProvider: DataProviderContract
     
@@ -27,6 +28,12 @@ class IntroController: UIViewController{
     @IBAction func connectPressed(sender: UIButton) {
         self.run()
     }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
+    
     override func viewDidLoad(){
         super.viewDidLoad()
         //Bootstraping
@@ -56,6 +63,7 @@ class IntroController: UIViewController{
         //Hide connection button and label
         self.infoConnect.hidden = true
         self.connectButton.hidden = true
+        self.pleaseWait.hidden = false
     }
     
     func showActivityIndicator(){
@@ -71,6 +79,7 @@ class IntroController: UIViewController{
     func showReconnectionOption(){
         self.connectButton.hidden = false
         self.infoConnect.hidden = false
+        self.pleaseWait.hidden = true
     }
     
     func setupDataProvider(success: (result: NSDictionary?)->Void){

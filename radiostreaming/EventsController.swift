@@ -17,13 +17,19 @@ class EventsController: UIViewController, UITableViewDataSource, UITableViewDele
     @IBOutlet weak var eventsCount: UILabel!
     
     @IBOutlet weak var viewActivity: UIActivityIndicatorView!
+    var backgroundImage = UIImage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewActivity.hidesWhenStopped = true
         self.viewActivity.startAnimating()
         
-        self.myTableView.backgroundView = UIImageView(image: UIImage(named: "radiostreaming_0009_color-blurry-background.png"))
+        myTableView.backgroundColor = UIColor.clearColor()
+        let blurEffect = UIBlurEffect(style: .Light)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        myTableView.backgroundView = blurEffectView
+        myTableView.backgroundView?.addSubview(UIImageView(image: self.backgroundImage))
+        
         let promotionService = PromotionService()
         promotionService.all { (result, error) -> Void in
             let result = NSJSONSerialization.JSONObjectWithData(result!, options: nil, error: nil) as! NSDictionary
