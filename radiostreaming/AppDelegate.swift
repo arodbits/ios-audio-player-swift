@@ -9,14 +9,81 @@
 import UIKit
 import CoreData
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var application: UIApplication?
+    var remoteHostStatus: NetworkStatus?
+    private var reachability:Reachability!;
+    
+    
+    func showNoConnectionAlertView(){
+        let currentView = self.getCurrentVisibleViewController()
+        let alertController = UIAlertController(title: "Alert", message: "No internet connection!", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
+        NSOperationQueue.mainQueue().addOperationWithBlock { () -> Void in
+                        currentView!.presentViewController(alertController, animated: true, completion: nil)
+        }
 
+
+    }
+    //Show UIAlertView when no connection is available. Called automatically by checkForReachability
+    func getCurrentVisibleViewController() ->UIViewController?{
+        let navigationController = self.application?.keyWindow?.rootViewController as! UINavigationController
+        return navigationController.visibleViewController
+    }
+    //Public interface
+    func checkConnectivity()->Bool{
+        if self.remoteHostStatus?.value == NotReachable.value{
+            self.showNoConnectionAlertView()
+            return false
+        }
+        return true
+    }
+    
+    func checkForReachability(notification:NSNotification)
+    {
+        // Remove the next two lines of code. You cannot instantiate the object
+        // you want to receive notifications from inside of the notification
+        // handler that is meant for the notifications it emits.
+        
+        //var networkReachability = Reachability.reachabilityForInternetConnection()
+        //networkReachability.startNotifier()
+        
+        let networkReachability = notification.object as! Reachability;
+        var remoteHostStatus = networkReachability.currentReachabilityStatus()
+        self.remoteHostStatus = remoteHostStatus
+        
+        if (remoteHostStatus.value == NotReachable.value)
+        {
+            println("Not Reachable")
+            self.showNoConnectionAlertView()
+        }
+        else if (remoteHostStatus.value == ReachableViaWiFi.value)
+        {
+            println("Reachable via Wifi")
+        }
+        else
+        {
+            println("Reachable")
+        }
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.application = application
+
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:"checkForReachability:", name: kReachabilityChangedNotification, object: nil);
+        
+        self.reachability = Reachability.reachabilityForInternetConnection();
+        self.reachability.startNotifier();
+        //Setting initial reachability value
+        self.remoteHostStatus = reachability.currentReachabilityStatus()
+
+        
+        
         return true
     }
 

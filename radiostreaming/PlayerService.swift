@@ -14,25 +14,40 @@ class PlayerService{
     
     var streamingURL:NSURL
     var audioPlayer:AVPlayer
-    
+    var app: AppDelegate
+    var audioStreamingItem: AVPlayerItem
     init(){
         self.streamingURL = NSURL(string: "http://s8.voscast.com:9476")!
-        let audioStreamingItem = AVPlayerItem(URL: self.streamingURL)
-        self.audioPlayer = AVPlayer(playerItem: audioStreamingItem)
+        self.audioStreamingItem = AVPlayerItem(URL: self.streamingURL)
+        self.audioPlayer = AVPlayer(playerItem: self.audioStreamingItem)
+
+        self.app = UIApplication.sharedApplication().delegate as! AppDelegate
     }
     
-    func play(){
-        self.audioPlayer.rate = 1.0
-        self.audioPlayer.play()
+    func play()->Bool{
+        if self.app.checkConnectivity(){
+            self.audioPlayer.rate = 1.0
+            self.audioPlayer.play()
+            return true
+        }
+        return false
     }
     
-    func stop(){
-        self.audioPlayer.pause()
+    func stop()->Bool{
+        if self.app.checkConnectivity(){
+            self.audioPlayer.pause()
+            return true
+        }
+        return false
     }
     
     func volume(value: Float){
         self.audioPlayer.volume = value
         println(value)
+    }
+    
+    deinit{
+        self.audioPlayer.finalize()
     }
     
 }

@@ -81,8 +81,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func playPressed(sender: UIButton) {
-        self.player.play()
-        self.toggleButton(sender, next: self.stopButton)
+        if self.player.play(){
+            self.toggleButton(sender, next: self.stopButton)
+        }
     }
 
     @IBAction func stopPressed(sender: UIButton) {

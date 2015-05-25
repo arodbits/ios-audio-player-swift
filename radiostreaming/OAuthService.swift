@@ -26,21 +26,14 @@ class OAuthService: DataProviderContract{
     }
     
     func checkConnectivity(success: (response: NSDictionary?)->Void){
-        let request = NSMutableURLRequest(URL: NSURL(string: "http://google.com")!)
-        let timeout = NSTimeInterval(5)
-        request.timeoutInterval = timeout
-        let connectivityTask = self.session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
-            if let res = response{
-                let httpResponse = res as! NSHTTPURLResponse
-                let responseCode = httpResponse.statusCode
-                if (responseCode == 200){
-                    success(response: ["status_code" : 200])
-                }
-            }else{
-                success(response: nil)
-            }
-        })
-        connectivityTask.resume()
+        
+        let app = UIApplication.sharedApplication().delegate as! AppDelegate
+        print("checking \(app.remoteHostStatus?.value)")
+        if (app.remoteHostStatus?.value == NotReachable.value){
+            success(response: nil)
+        }else{
+            success(response: ["status_code" : 200])
+        }
     }
     
     func run(success: (response: NSDictionary)->Void){

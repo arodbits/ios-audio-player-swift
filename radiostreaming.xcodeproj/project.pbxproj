@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE385CEA1B125E0000A921EE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AE385CE91B125E0000A921EE /* Reachability.m */; };
 		AE4E685D1B00F17000F455B4 /* PromotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4E685C1B00F17000F455B4 /* PromotionService.swift */; };
 		AE5528D41B06E206001D9D0C /* radiostreaming_0009_color-blurry-background.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528D31B06E206001D9D0C /* radiostreaming_0009_color-blurry-background.png */; };
 		AE5528D61B06E8F9001D9D0C /* radiostreaming_0007_Ellipse-1-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5528D51B06E8F9001D9D0C /* radiostreaming_0007_Ellipse-1-copy.png */; };
@@ -63,6 +64,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE385CE71B125DFF00A921EE /* radiostreaming-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "radiostreaming-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE385CE81B125E0000A921EE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		AE385CE91B125E0000A921EE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		AE4E685C1B00F17000F455B4 /* PromotionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionService.swift; sourceTree = "<group>"; };
 		AE5528D31B06E206001D9D0C /* radiostreaming_0009_color-blurry-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0009_color-blurry-background.png"; sourceTree = "<group>"; };
 		AE5528D51B06E8F9001D9D0C /* radiostreaming_0007_Ellipse-1-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radiostreaming_0007_Ellipse-1-copy.png"; sourceTree = "<group>"; };
@@ -205,6 +209,9 @@
 		AE5C98741AEDB8A6008593F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AE385CE81B125E0000A921EE /* Reachability.h */,
+				AE385CE91B125E0000A921EE /* Reachability.m */,
+				AE385CE71B125DFF00A921EE /* radiostreaming-Bridging-Header.h */,
 				AE5528ED1B0BEA92001D9D0C /* UIFiles */,
 				AE5528D31B06E206001D9D0C /* radiostreaming_0009_color-blurry-background.png */,
 				AE5528D51B06E8F9001D9D0C /* radiostreaming_0007_Ellipse-1-copy.png */,
@@ -386,6 +393,7 @@
 				AE9591D91AFD1E30003CD36E /* OAuthService.swift in Sources */,
 				AE4E685D1B00F17000F455B4 /* PromotionService.swift in Sources */,
 				AE5C987A1AEDB8A6008593F5 /* radiostreaming.xcdatamodeld in Sources */,
+				AE385CEA1B125E0000A921EE /* Reachability.m in Sources */,
 				AE5C98771AEDB8A6008593F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,9 +521,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = radiostreaming/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "radiostreaming/radiostreaming-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -523,9 +534,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = radiostreaming/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "radiostreaming/radiostreaming-Bridging-Header.h";
 			};
 			name = Release;
 		};

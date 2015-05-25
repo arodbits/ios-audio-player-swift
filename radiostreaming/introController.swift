@@ -35,11 +35,14 @@ class IntroController: UIViewController{
     
     
     override func viewDidLoad(){
+       
         super.viewDidLoad()
         //Bootstraping
         // Set activity indicator hidden when stopped
         self.activityIndicator.hidesWhenStopped = true;
         self.run()
+        
+
         
     }
     
