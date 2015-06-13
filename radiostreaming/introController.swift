@@ -41,9 +41,6 @@ class IntroController: UIViewController{
         // Set activity indicator hidden when stopped
         self.activityIndicator.hidesWhenStopped = true;
         self.run()
-        
-
-        
     }
     
     func run(){
@@ -57,7 +54,7 @@ class IntroController: UIViewController{
             self.setupDataProvider({ (result) -> Void in
                 if let res = result{
                     //get Radio Profile Data
-                    self.radioProfileData(4)
+                    self.radioProfileData(CLIENT_ID)
                 }
             })
         }
@@ -122,7 +119,7 @@ class IntroController: UIViewController{
         }
     }
     
-    func radioProfileData(id: Int){
+    func radioProfileData(id: NSString){
         self.dataProvider.get("api/radio/\(id)", callback: { (result, error) -> Void in
             if let res = result{
                 NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in

@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+let CLIENT_ID = NSString(string: "HgPcsQZMNbs4k7Jcwgd3YutTHNYCb91oEJiYtoK0")
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

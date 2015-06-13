@@ -20,7 +20,6 @@ class PlayerService{
         self.streamingURL = NSURL(string: "http://s8.voscast.com:9476")!
         self.audioStreamingItem = AVPlayerItem(URL: self.streamingURL)
         self.audioPlayer = AVPlayer(playerItem: self.audioStreamingItem)
-
         self.app = UIApplication.sharedApplication().delegate as! AppDelegate
     }
     

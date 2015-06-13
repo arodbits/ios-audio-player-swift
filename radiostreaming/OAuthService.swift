@@ -13,15 +13,15 @@ class OAuthService: DataProviderContract{
     
     let client_id: NSString
     let client_secret: NSString
-    let apiURL = NSURL(string: "http://radioproezas.app")
+    let apiURL = NSURL(string: "http://www.sc.capitalofcode.com/")
     let session = NSURLSession.sharedSession()
     let grant_type: NSString
     let defaults = NSUserDefaults.standardUserDefaults()
    
     init(){
         //Insecure for production. Hide id and secret.
-        self.client_id = "HgPcsQZMNbs4k7Jcwgd3YutTHaNeb91oEJiYtoK0"
-        self.client_secret = "2G3RfjMRqJLGNOibiG5DgA0BbY0nVWpxRbly42Si"
+        self.client_id = CLIENT_ID // Valid for demo. Will be encrypted
+        self.client_secret = "2G3RfjMRqJLGNOibiG5DgA0BbY0NYCpxRbly42Si" //Valid for demo. Will be encrypted. 
         self.grant_type = "client_credentials"
     }
     
